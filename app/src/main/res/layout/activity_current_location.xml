@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3E1D4"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:scrollbars="vertical"
+    android:weightSum="1.0">
+
+    <RelativeLayout
+        android:id="@+id/auto_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_margin="10dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/round_layout"
+        android:padding="10dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:hint="Search Your City"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_weight="0.4"
+        android:background="@drawable/round_layout">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            tools:context="com.project.touristguide.CurrentLocationMapFragement"
+            tools:layout="@layout/activity_splash_screen" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mapLayout"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/round_layout"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/signup_button"
+                android:drawableLeft="@drawable/list"
+                android:padding="5dp"
+                android:text="My City"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/myFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/signup_button"
+                android:drawableLeft="@drawable/favorite_heart"
+                android:padding="5dp"
+                android:text="My Favourite"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

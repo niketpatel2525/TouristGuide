@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "769574388740",
+    "project_id": "tourist-guide-5ebae"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769574388740:android:ad857e4864a20e86",
+        "android_client_info": {
+          "package_name": "com.project.touristguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769574388740-rklp5o8k6gmrsj0shbfa1r6rhndmjmm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.touristguide",
+            "certificate_hash": "6763F55FFAE21553300B8D1B571DFFA7270CBF0E"
+          }
+        },
+        {
+          "client_id": "769574388740-923ve4lrn3afkbd4r7fj0kql3ibplg8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDinbJAVgUfZRIiKL2smpTNG10XeGJWeg8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

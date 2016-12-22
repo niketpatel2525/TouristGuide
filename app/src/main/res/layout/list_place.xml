@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list__restaurant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3E1D4"
+    android:padding="20dp"
+    tools:context="com.project.touristguide.apidata.Place_list_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/round_layout">
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="List of places"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp"
+            android:textStyle="normal|bold|italic" />
+
+        <ListView
+            android:id="@+id/place_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/category_name"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@style/GenericProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:progressDrawable="@drawable/greenprogress" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

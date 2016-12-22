@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3E1D4"
+    android:padding="20dp"
+    tools:context="com.project.touristguide.apidata.favorite_list_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favorite_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Favorite List"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/invisibleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/favorite_name"
+            android:layout_alignBottom="@id/favorite_name"
+            android:gravity="center_horizontal"
+            android:text="No data Available"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <ListView
+            android:id="@+id/fav_place_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/favorite_name"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@style/GenericProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

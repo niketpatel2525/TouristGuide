@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myAnimLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:gravity="center_vertical|center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/transparent_round_layout"
+        android:gravity="center|center_vertical"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btSignin"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_horizontal"
+            android:text="Sign In"
+            android:textColor="#D9534F"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invisibleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/transparent_round_layout"
+        android:gravity="center|center_vertical"
+        android:padding="3dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/btSignOut"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_horizontal"
+            android:text="Sign Out"
+
+            android:textColor="#D9534F"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/transparent_round_layout"
+        android:gravity="center|center_vertical"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btGuest"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_horizontal"
+            android:text="Guest Login"
+            android:textColor="#D9534F"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+
+</LinearLayout>
