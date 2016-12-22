@@ -1,0 +1,3 @@
+# TouristGuide
+Our application “Tourist Guide” serves a simple purpose of showing the tourist spots of the city that a tourist wants and makes it easy for him to explore locations such as museums, tourist attractions, amusement parks etc., around.
+It shows detailed information about each and every tourist location like Near place, Map, Direction, location information. It also shows place address, timing for visits. Recent pics of the place to be shown when we click on location details. It also helps you by showing map to reach at that location from your current location through Google Map. Also the app shows the weather condition for the place that tourist wants.
